@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:padding="3dp" >
+
+
+        <ImageView
+            android:id="@+id/imgkls"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:src="@drawable/mtk"
+
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/txtnamakls"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kimia X DKV"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_gravity="bottom"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="5dp"/>
+        <TextView
+            android:id="@+id/txtnamaguru"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Khairul Rahman, S.Pd"
+            android:textSize="10sp"
+            android:layout_gravity="bottom"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="5dp"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+

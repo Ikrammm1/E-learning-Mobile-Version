@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp"
+            app:cardPreventCornerOverlap="true"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/topik"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sifat Sifat Atom"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textSize="14sp"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/garisdriver" />
+
+                <TextView
+                    android:id="@+id/deskripsi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Atom adalah suatu satuan dasar materi, yang terdiri atas inti atom serta awan elektron bermuatan negatif yang mengelilinginya."
+                    android:layout_marginTop="10dp" />
+                <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:paddingTop="10dp"
+
+                >
+                <LinearLayout
+                    android:id="@+id/colMateri"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:weightSum="4"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="10dp"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="3">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_materi" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/txtMateri"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Materi Atom"
+                            android:textColor="@color/tombol1" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+             <LinearLayout
+                 android:id="@+id/colquiz"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp"
+                    android:paddingTop="10dp"
+
+                    >
+                 <ImageView
+                     android:layout_width="match_parent"
+                     android:layout_height="5dp"
+                     android:src="@drawable/garisdriver" />
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:weightSum="4"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="10dp"
+                        android:paddingBottom="10dp"
+
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_weight="3">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_quiz" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/txtQuiz"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Judul Quiz"
+                                android:textColor="@color/tombol1" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                     android:id="@+id/coldeadline"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:orientation="horizontal"
+                     android:layout_marginTop="5dp"
+                     android:weightSum="4"
+                     android:paddingStart="15dp"
+                     android:paddingEnd="10dp"
+                     android:paddingBottom="10dp"
+
+                     >
+
+                     <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:orientation="vertical"
+                         android:layout_weight="3">
+
+                         <ImageView
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:src="@drawable/ic_date" />
+
+                     </LinearLayout>
+                     <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:orientation="vertical"
+                         android:layout_weight="1">
+
+                         <TextView
+                             android:id="@+id/txtdeadline"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:text="Deadline"
+                             android:textColor="@color/black" />
+
+                     </LinearLayout>
+
+                 </LinearLayout>
+
+                 <LinearLayout
+                     android:id="@+id/colsisawaktu"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:orientation="horizontal"
+                     android:layout_marginTop="5dp"
+                     android:weightSum="4"
+                     android:paddingStart="15dp"
+                     android:paddingEnd="10dp"
+                     android:paddingBottom="10dp"
+
+                     >
+
+                     <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:orientation="vertical"
+                         android:layout_weight="3">
+
+                         <ImageView
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:src="@drawable/ic_time" />
+
+                     </LinearLayout>
+                     <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:orientation="vertical"
+                         android:layout_weight="1">
+
+                         <TextView
+                             android:id="@+id/txtsisawaktu"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:text="Sisa Waktu"
+                             android:textColor="@color/black" />
+
+                     </LinearLayout>
+
+                 </LinearLayout>
+                 <LinearLayout
+                     android:id="@+id/btndetailquiz"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:orientation="horizontal"
+                     android:layout_marginTop="5dp"
+                     android:weightSum="4"
+                     android:paddingStart="15dp"
+                     android:paddingEnd="10dp"
+                     android:paddingBottom="10dp"
+                     android:paddingTop="10dp"
+                     android:background="@drawable/btncolor"
+                     >
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:gravity="center"
+                         android:textSize="16sp"
+                         android:textColor="@color/white"
+                         android:text="Detail Quiz" />
+
+
+                 </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

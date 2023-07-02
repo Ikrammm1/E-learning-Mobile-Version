@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="10dp"
+    app:cardCornerRadius="10dp"
+    android:layout_marginBottom="10dp"
+    app:cardElevation="10dp"
+    app:cardPreventCornerOverlap="true"
+    android:layout_marginTop="15dp"
+    tools:context=".cari.Adapterresult">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="left"
+                android:layout_marginEnd="10dp"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/gambar_kls"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:src="@drawable/bahasa1"
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/namamapel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sistem Informasi - Kelas MM XII"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/deskripsi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kerjakan Soal ini. Perhatikan waktu batas pengumpulan"
+                    android:textSize="10sp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="3"
+                    android:gravity="bottom"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="20dp"
+
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:src="@drawable/person"/>
+
+                    <TextView
+                        android:id="@+id/nm_guru"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Hairul Rahman, S.Pd"
+                        android:textColor="@color/black"
+                        android:textSize="10sp"
+                        android:layout_gravity="center"/>
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

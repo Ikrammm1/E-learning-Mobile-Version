@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<item
+    android:id="@+id/nav_home"
+    android:icon="@drawable/btnhome"
+    android:title="Beranda"
+    app:cnb_iconColor="#3F51B5"/>
+    <item
+        android:id="@+id/nav_cari"
+        android:icon="@drawable/btncari"
+        android:title="Cari"
+        app:cnb_iconColor="#3F51B5"/>
+    <item
+        android:id="@+id/nav_tugas"
+        android:icon="@drawable/btntugas"
+        android:title="Tugas"
+        app:cnb_iconColor="#3F51B5"/>
+    <item
+        android:id="@+id/nav_profil"
+        android:icon="@drawable/btnprofile"
+        android:title="Profile"
+        app:cnb_iconColor="#3F51B5"/>
+</menu>

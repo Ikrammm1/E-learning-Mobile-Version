@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.skadubai.elearning">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".cari.MasukKelas"></activity>
+        <activity android:name=".quiz.HasilQuiz" />
+        <activity android:name=".quiz.SimpanHasilQuiz" />
+        <activity android:name=".quiz.DetailQuiz" />
+        <activity android:name=".Editjwb" />
+        <activity android:name=".quiz.Quiz" />
+        <activity android:name=".tugas.DetailTugas" />
+        <activity android:name=".Jwbtugas" />
+        <activity android:name=".detailkelas.AdapterDetailkls" />
+        <activity android:name=".detailkelas.Detailkelas" />
+        <activity android:name=".Test" />
+        <activity android:name=".tugas.Adapatertugas" />
+        <activity android:name=".cari.Adapterresult" />
+        <activity android:name=".cari.Resultcari" />
+        <activity android:name=".menubar" />
+        <activity android:name=".kelas.Caripage" />
+        <activity android:name=".beranda.Beranda" />
+        <activity android:name=".register.Register" />
+        <activity android:name=".login.Login" />
+        <activity android:name=".splash.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".landing.Landing" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

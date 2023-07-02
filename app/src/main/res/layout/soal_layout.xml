@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="30dp"
+    android:layout_marginEnd="30dp"
+    android:layout_marginTop="20dp"
+    android:paddingBottom="20dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true"
+>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/nosoal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Soal no - 2"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"/>
+            <ImageView
+
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:src="@drawable/garisdriver" />
+            <TextView
+                android:id="@+id/soal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="AT merupakan singkatan dati jurusan?"
+                android:textColor="@color/black"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="12sp"
+                android:gravity="left"/>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/rgjwb"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+                    <RadioButton
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:id="@+id/jwbA"
+                        android:checked="true"
+                        android:text="A. Agribisnis Tanaman"
+                        android:textSize="12sp">
+
+
+                    </RadioButton>
+                    <RadioButton
+                        android:layout_weight="1"
+                        android:layout_marginStart="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:id="@+id/jwbB"
+                        android:text="B. Agrobisnis Tanaman"
+                        android:textSize="12sp">
+
+                    </RadioButton>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+                    <RadioButton
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:id="@+id/jwbC"
+                        android:text="C. Agrobisnis Taman"
+                        android:textSize="12sp">
+
+
+                    </RadioButton>
+                    <RadioButton
+                        android:layout_weight="1"
+                        android:layout_marginStart="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:id="@+id/jwbD"
+                        android:text="D. Agribisnis Taman"
+                        android:textSize="12sp">
+
+                    </RadioButton>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:weightSum="2">
+                    <RadioButton
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:id="@+id/jwbE"
+                        android:text="E. Agro Teknologi"
+                        android:textSize="12sp">
+
+
+                    </RadioButton>
+
+                </LinearLayout>
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

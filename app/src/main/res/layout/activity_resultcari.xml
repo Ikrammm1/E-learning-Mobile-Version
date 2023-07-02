@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".cari.Resultcari">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        >
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:cardCornerRadius="10dp">
+
+            <SearchView
+                android:id="@+id/edCari"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:queryHint="Cari Kelas..."
+                android:iconifiedByDefault="false"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:background="@drawable/search"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/titleresult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hasil Pencarian"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"/>
+
+            <LinearLayout
+                android:id="@+id/noresult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:src="@drawable/noresult"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginBottom="20dp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ups!.. Kelas tidak ditemukan, coba kata kunci lain"
+                    android:gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/list_hasilcari"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                tools:itemCount="3"
+                tools:listitem="@layout/activity_adapterresult"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:paddingBottom="20dp"
+                android:layout_marginBottom="30dp">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

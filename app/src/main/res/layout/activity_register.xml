@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".register.Register">
+
+    <ImageView
+        android:id="@+id/btn_bck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Masukkan Data Anda"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <LinearLayout
+        android:id="@+id/form_regis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="80dp">
+
+        <EditText
+            android:id="@+id/edt_nisn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="NISN"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:inputType="text"/>
+        <EditText
+            android:id="@+id/edt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email "
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:inputType="text"/>
+        <TextView
+            android:id="@+id/err_mail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="pleasae enter valid email"
+            android:textColor="@color/merah"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp" />
+
+        <EditText
+            android:id="@+id/edt_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="password"
+            android:textColor="@color/grey"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:inputType="textPassword"
+            android:drawableEnd="@drawable/eye"/>
+        <TextView
+            android:id="@+id/err_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Must contain 8 charecter"
+            android:textColor="@color/merah"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp" />
+
+        <EditText
+            android:id="@+id/edt_passkonf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="konfirmasi password"
+            android:textColor="@color/grey"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:inputType="textPassword"
+            android:drawableEnd="@drawable/eye"/>
+        <TextView
+            android:id="@+id/err_passkonf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password not valid"
+            android:textColor="@color/merah"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Daftar"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:background="@drawable/btncolor"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="80dp" />
+
+</LinearLayout>
